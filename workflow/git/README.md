@@ -6,8 +6,8 @@
 * Delete local and remote feature branches after merging.
 * Perform work in a feature branch.
 * Rebase frequently to incorporate upstream changes.
-* Create pull requests when you finish your work
-* Try not to work on more than 1 feature per branch/pull request
+* Create a [pull request](/workflow/pull-requests) when you finish your work.
+* Try not to work on more than 1 feature per branch/pull request.
 
 ## Write a Feature
 

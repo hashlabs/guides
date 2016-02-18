@@ -4,6 +4,7 @@ Guides on how things are done in [Hash Labs](www.hashlabs.com).
 
 * [Workflow](/workflow)
   * [Git](/workflow/git)
+  * [Pull Requests](/workflow/pull-requests)
 
 # Contributing
 
