@@ -2,8 +2,12 @@
 
 ## Create a Pull Request
 
+* Avoid creating dependant pull requests. A pull request should be
+  as atomic as possible.
+* Context is really important and makes easier to your peers to review your code. Take your time writing
+  a good pull request context.
 * Pull requests should be from a feature branch in the same repo (no
-  forks)
+  forks).
 * Follow our [branching convention](/workflow/git).
 
 ## Pull Request Title
