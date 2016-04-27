@@ -33,7 +33,7 @@ BEM splits components classes into three groups:
 
 To take an analogy (note, not an example):
 
-```
+```scss
 .capybara {}
 .capybara-head {}
 .capybara--tall {}
@@ -47,7 +47,7 @@ Here we can see that `.capybara {}` is the Block; it is the sole root of a discr
 
 Your Block context starts at the most logical, self-contained, discrete location. To continue with our person-based analogy, we'd not have a class like `.room-person {}`, as the room is another, much higher context. We'd probably have separate Blocks, like so:
 
-```
+```scss
 .room {
   &-door {}
   &--girly {}
@@ -62,7 +62,7 @@ If we did want to denote a `.capybara {}` inside a `.room {}`, it is more correc
 
 A more realistic example of properly scoped blocks might look something like this, where each chunk of code represents its own Block:
 
-```
+```scss
 .page {}
 .content {}
 .sub-content {}
@@ -99,14 +99,14 @@ The structure we follow to group files is:
 * __Tools__: it includes files that make easier the development of the project such as `_tools--mixins.scss`, `_tools--functions.scss`, `_tools--z-map.scss` and any other that can be added for any particular project needs.
 * __Objects__: are any individual and isolates representations of coherent elements that can be used on any context within the project. for instance: `_objects--buttons.scss`
 * __Components__: are composites of several objects that generate a more complex element such as: `_components--searcher.scss` which typically may be a compound of a button and an input. Together they become something new and individually they may be transformed too.
-* __Layouts__: are a set of rules that define the appearance of any generic pages, in nuts, is like set the baseline format for pages that are similar, for instance blog posts, data listings or any page that even when has different content keeps similar structure.
+* __Layouts__: are a set of rules that define the appearance of any generic pages, in short, is like set the baseline format for pages that are similar, for instance blog posts, data listings or any page that even when has different content keeps similar structure.
 * __Partials__: unlike layouts partials represents specific appearance for some pages, for instance in a blog website we can have a custom-thing page which in many aspects is different to other pages.
 
 Keep in mind that Layouts and Partials can be used to apply some context to objects, while the object file has styles specific for just the object core, in the other hand, layouts or partials has some specific styles to be applied over the object core  in order to meet the design needs.
 
 Finally, is important to mention that we conserve the same order like the one listed above to create the `main.scss` file. In addition, a typically main file will look like:
 
-```
+```scss
 /**
  * Settings
  */
@@ -152,7 +152,7 @@ Finally, is important to mention that we conserve the same order like the one li
 
 We use [Bootstrap](http://getbootstrap.com/) as our CSS Framework, in order to make the most of it all variables that need to be changed to satisfied the project needs are going to be listed as show below in a file called `_settings--bootstrap.scss`: (All this in order to do not overwrite rules as a first alternative to achieve the expected results)
 
-```
+```scss
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Add into this file the variables that are going
@@ -184,7 +184,7 @@ We use [Bootstrap](http://getbootstrap.com/) as our CSS Framework, in order to m
 
 This file contain a SASS function to declare the way we will be doing the z-index styles for major components. The way it works, is creating an array of elements with usual names and giving the position of that element inside the array, that's the correspondant z-index. A basic implementation of this will look like:
 
-```
+```scss
 $z-layers: (
   'initial': 0,
   'menu': 500,
@@ -233,7 +233,7 @@ This is the attribute the variable applies, for example `background`, `height`, 
 
 Variables should be the first section of a file. Like the following example
 
-```
+```scss
 $color--foo-background:       $blueshell;
 $color--foo-font:             $blueshell;
 $<variable>:                  <value>;
