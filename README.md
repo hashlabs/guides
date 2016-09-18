@@ -7,11 +7,19 @@ Spanish.
 
 This is for internal use only, but someone could find these guides useful.
 
-# Contributing
+## Building
+
+To release a new version, run the following command
+
+```bash
+npm run docs:publish
+```
+
+## Contributing
 
 Please read the [contribution guidelines](https://github.com/hashlabs/guides/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
-# About Hash Labs
+## About Hash Labs
 
 ![hash labs logo](https://www.hashlabs.com/images/hashlabs_logo_horizontal_02.png)
 
