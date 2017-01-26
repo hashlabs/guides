@@ -1,0 +1,373 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <title>CHANGELOG · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="PullRequests.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../styleguides/">
+            
+                <a href="../styleguides/">
+            
+                    
+                    Styleguides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../styleguides/JavaScript.html">
+            
+                <a href="../styleguides/JavaScript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Git.html">
+            
+                <a href="Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="PullRequests.html">
+            
+                <a href="PullRequests.html">
+            
+                    
+                    Pull Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="Changelog.html">
+            
+                <a href="Changelog.html">
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CHANGELOG</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="changelog">CHANGELOG</h1>
+<p>Mantenemos un CHANGELOG por proyecto. Nos basamos en las ideas de <a href="http://keepachangelog.com" _target="blank">keepachangelog.com</a>.</p>
+<h2 id="al-hacer-un-pull-request">Al hacer un Pull Request</h2>
+<p>Cuando escribas un feature, fix o cambio nuevo, debes agregar una entrada en el
+CHANGELOG en la secci&#xF3;n de <strong>Unreleased</strong>. Si un Pull Request no tiene
+una entrada para los cambios correspondientes, entonces no es valido y
+no se puede mergear.</p>
+<p>Pueden existir tres tipos de secciones dentro de un Release.</p>
+<ul>
+<li>Added: Nueva funcionalidad que se agrego</li>
+<li>Fixed: Un bug que se corrigi&#xF3;</li>
+<li>Changed: Parte de un codigo que se refactoreo</li>
+</ul>
+<pre><code class="lang-markdown">[Unreleased]
+<span class="hljs-section">### Added</span>
+<span class="hljs-bullet">* </span>New Feature
+
+<span class="hljs-section">### Fixed</span>
+<span class="hljs-bullet">* </span>This annoying bug
+
+<span class="hljs-section">### Changed</span>
+<span class="hljs-bullet">* </span>This crappy code
+
+<span class="hljs-section">## [1.0.1] - 2016-05-19</span>
+<span class="hljs-section">### Fixed</span>
+<span class="hljs-bullet">* </span>Removing messaging locking from notification\_ms.
+
+<span class="hljs-section">## 1.0.0 - 2014-05-31</span>
+<span class="hljs-section">### Added</span>
+<span class="hljs-bullet">* </span>Other feature
+
+[<span class="hljs-symbol">Unreleased</span><span class="hljs-link">]: https://github.com/hashlabs/repo/compare/1.0.1...HEAD</span>
+[<span class="hljs-symbol">1.0.1</span><span class="hljs-link">]: https://github.com/hashlabs/repo/compare/1.0.0...1.0.1</span>
+</code></pre>
+<h2 id="versiones">Versiones</h2>
+<p>Usamos <a href="http://semver.org/" _target="blank">Semver</a> para nuestras versiones. Semver
+tiene tres niveles en un numero de version.</p>
+<p><code>MAJOR.MINOR.PATCH</code></p>
+<ul>
+<li>MAJOR: Se usa para marcar cambios muy grandes o hitos en un proyecto. Tambien se
+usa para marcar una posible incompatiblidad que versiones anteriores.</li>
+<li>MINOR: Cuando agregas funcionalidad que no representa un hito en el
+proyecto.</li>
+<li>PATCH: Cuando arreglas errores o refactoreas codigo.</li>
+</ul>
+<h2 id="releases">Releases</h2>
+<p>Un Release es una version que representa el estado de un producto en el
+tiempo. Cada Release puede contener uno o mas features/fixes/changes.</p>
+<p>A la hora de hacer un deploy a production, se debe subir solo codigo que este asociado a una version. Esto nos facilita el
+rastreo de bugs.</p>
+<p>Github y Git nos dan <code>tags</code>, usamos los tags para marcar versiones en Git.</p>
+<p>Para hacer un release los pasos son los siguentes:</p>
+<ol>
+<li>En el branch master, cambiar el CHANGELOG, moviendo la seccion de <strong>Unreleased</strong> a una
+version.</li>
+<li>Hacer commit de este cambio con el nombre de la version, <code>git commit -m &quot;1.0.2&quot;</code></li>
+<li>Crear un tag con la misma version, <code>git tag 1.0.2</code></li>
+<li>Push los cambios a master <code>git push upstream master</code></li>
+<li>Push los tags al repo <code>git push upstream --tags</code></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="PullRequests.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Pull Requests">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CHANGELOG","level":"1.3.3","depth":2,"previous":{"title":"Pull Requests","level":"1.3.2","depth":2,"path":"workflow/PullRequests.md","ref":"workflow/PullRequests.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"es","gitbook":"*"},"file":{"path":"workflow/Changelog.md","mtime":"2016-06-14T21:29:48.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2017-01-26T21:29:29.909Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,538 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>SASS · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../workflow/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../methodology/README.md">
+            
+                <a href="../methodology/README.md">
+            
+                    
+                    Methodology
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../methodology/X-Workflow.html">
+            
+                <a href="../methodology/X-Workflow.html">
+            
+                    
+                    X-Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../methodology/HowToWriteASpec.html">
+            
+                <a href="../methodology/HowToWriteASpec.html">
+            
+                    
+                    How to write a spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Styleguides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="SASS.html">
+            
+                <a href="SASS.html">
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../workflow/">
+            
+                <a href="../workflow/">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../workflow/Git.html">
+            
+                <a href="../workflow/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../workflow/PullRequests.html">
+            
+                <a href="../workflow/PullRequests.html">
+            
+                    
+                    Pull Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SASS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sass">Sass</h1>
+<p>One of the simplest goals of this style guide is setting your documents to be consistent. This is a set of rules regarding syntax and formatting. Having a standard way of writing SCSS means that code will always look, feel and behave familiar to all members of the team.</p>
+<h2 id="general">General</h2>
+<p>At a very high-level, we want:</p>
+<ul>
+<li>Two (2) space indents.</li>
+<li>Always use Tab instead spacebar.</li>
+<li>Multi-line CSS. Avoid single line rules.</li>
+<li>Meaningful use of whitespace.</li>
+</ul>
+<p>Your selectors are fundamental to writing good CSS. To very briefly sum it up our intentions:</p>
+<ul>
+<li>Select what you want explicitly, rather than relying on circumstance or coincidence.</li>
+<li><strong>Write selectors for reusability</strong>, so that you can work more efficiently and reduce waste and repetition.</li>
+<li><strong>Do not nest selectors unnecessarily</strong>, because this will increase specificity and affect where else you can use your styles.</li>
+<li><strong>Do not qualify selectors unnecessarily</strong>, as this will impact the number of different elements you can apply styles to.</li>
+<li><strong>Keep selectors as short as possible</strong>, in order to keep specificity down and performance up.</li>
+</ul>
+<p>Focussing on these points will keep your selectors a lot more sane and easy to work with on changing and long-running projects.</p>
+<h3 id="bem-naming-sort-of">BEM naming (sort of)</h3>
+<p>BEM, meaning Block, Element, Modifier, is a front-end methodology coined by developers working at Yandex. Whilst BEM is a complete methodology, here we are only concerned with its naming convention. Further, the naming convention here only is BEM-like; the principles are exactly the same, but the actual syntax differs slightly.</p>
+<p>BEM splits components classes into three groups:</p>
+<ul>
+<li>Block: The sole root of the component.</li>
+<li>Element: A component part of the Block.</li>
+<li>Modifier: A variant or extension of the Block.</li>
+</ul>
+<p>To take an analogy (note, not an example):</p>
+<pre><code class="lang-scss"><span class="hljs-selector-class">.capybara</span> {}
+<span class="hljs-selector-class">.capybara-head</span> {}
+<span class="hljs-selector-class">.capybara--tall</span> {}
+</code></pre>
+<p>Elements are delimited with two (1) hyphen <code>(-)</code>, and Modifiers are delimited by two (2) hyphens <code>(--)</code>.</p>
+<p>Here we can see that <code>.capybara {}</code> is the Block; it is the sole root of a discrete entity. <code>.capybara-head {}</code> is an Element; it is a smaller part of the <code>.capybara {}</code> Block. Finally, <code>.capybara--tall {}</code> is a Modifier; it is a specific variant of the <code>.capybara {}</code> Block.</p>
+<h3 id="starting-context">Starting Context</h3>
+<p>Your Block context starts at the most logical, self-contained, discrete location. To continue with our person-based analogy, we&apos;d not have a class like <code>.room-person {}</code>, as the room is another, much higher context. We&apos;d probably have separate Blocks, like so:</p>
+<pre><code class="lang-scss"><span class="hljs-selector-class">.room</span> {
+  &amp;-door {}
+  &amp;--girly {}
+}
+
+<span class="hljs-selector-class">.capybara</span> {
+  &amp;-<span class="hljs-selector-tag">head</span> {}
+}
+</code></pre>
+<p>If we did want to denote a <code>.capybara {}</code> inside a <code>.room {}</code>, it is more correct to use a selector like <code>.room .capybara {}</code> which bridges two Blocks than it is to increase the scope of existing Blocks and Elements.</p>
+<p>A more realistic example of properly scoped blocks might look something like this, where each chunk of code represents its own Block:</p>
+<pre><code class="lang-scss"><span class="hljs-selector-class">.page</span> {}
+<span class="hljs-selector-class">.content</span> {}
+<span class="hljs-selector-class">.sub-content</span> {}
+<span class="hljs-selector-class">.footer</span> {
+  &amp;-copyright {}
+}
+</code></pre>
+<h2 id="files">Files</h2>
+<p>One of the structures for us to develop, is the use of  small snippets of code that we embed in our <code>main.scss</code> file for compiling.</p>
+<p>The naming convention for files name is:</p>
+<pre><code>_&lt;type&gt;--&lt;subject&gt;.scss
+</code></pre><p>For instance a typically object file name is going to look like:</p>
+<pre><code>_objects--buttons.scss
+</code></pre><p>Note the use of plural names in order to represent the types, besides, the subject is in plural since the type is <code>objects</code> otherwise will be singular like:</p>
+<pre><code>_layouts--dashboard.scss
+</code></pre><p>The structure we follow to group files is:</p>
+<ul>
+<li><strong>Settings</strong>: it includes all the files that set variables that are going to be used on several files of the project</li>
+<li><strong>Tools</strong>: it includes files that make easier the development of the project such as <code>_tools--mixins.scss</code>, <code>_tools--functions.scss</code>, <code>_tools--z-map.scss</code> and any other that can be added for any particular project needs.</li>
+<li><strong>Objects</strong>: are any individual and isolates representations of coherent elements that can be used on any context within the project. for instance: <code>_objects--buttons.scss</code></li>
+<li><strong>Components</strong>: are composites of several objects that generate a more complex element such as: <code>_components--searcher.scss</code> which typically may be a compound of a button and an input. Together they become something new and individually they may be transformed too.</li>
+<li><strong>Layouts</strong>: are a set of rules that define the appearance of any generic pages, in short, is like set the baseline format for pages that are similar, for instance blog posts, data listings or any page that even when has different content keeps similar structure.</li>
+<li><strong>Partials</strong>: unlike layouts partials represents specific appearance for some pages, for instance in a blog website we can have a custom-thing page which in many aspects is different to other pages.</li>
+</ul>
+<p>Keep in mind that Layouts and Partials can be used to apply some context to objects, while the object file has styles specific for just the object core, in the other hand, layouts or partials has some specific styles to be applied over the object core  in order to meet the design needs.</p>
+<p>Finally, is important to mention that we conserve the same order like the one listed above to create the <code>main.scss</code> file. In addition, a typically main file will look like:</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/**
+ * Settings
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;settings--palette.scss&apos;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;settings--bootstrap.scss&apos;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap&apos;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;settings--defaults.scss&apos;</span>;
+
+<span class="hljs-comment">/**
+ * Tools
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;tools--&lt;subject&gt;.scss&apos;</span>;
+
+<span class="hljs-comment">/**
+ * Objects
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;objects--&lt;subject&gt;.scss&apos;</span>;
+
+<span class="hljs-comment">/**
+ * Components
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;components--&lt;subject&gt;.scss&apos;</span>;
+
+
+<span class="hljs-comment">/**
+ * Layouts
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;layouts--&lt;subject&gt;.scss&apos;</span>;
+
+<span class="hljs-comment">/**
+ * Partials
+ */</span>
+
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;partials--&lt;subject&gt;.scss&apos;</span>;
+</code></pre>
+<h2 id="working-with-bootstrap">Working with Bootstrap</h2>
+<p>We use <a href="http://getbootstrap.com/" _target="blank">Bootstrap</a> as our CSS Framework, in order to make the most of it all variables that need to be changed to satisfied the project needs are going to be listed as show below in a file called <code>_settings--bootstrap.scss</code>: (All this in order to do not overwrite rules as a first alternative to achieve the expected results)</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Add into this file the variables that are going
+ * to be used by Bootstrap to delivery its grid and
+ * overall styles. A complete list of variables
+ * can be found at: (http://getbootstrap.com/customize/#less-variables)
+ */</span>
+
+<span class="hljs-comment">// Colors</span>
+...
+
+<span class="hljs-comment">// Scaffolding</span>
+...
+
+<span class="hljs-comment">// Grid system</span>
+...
+
+<span class="hljs-comment">// Components</span>
+...
+
+<span class="hljs-comment">// Buttons</span>
+...
+
+...
+</code></pre>
+<h2 id="z-map">Z-MAP</h2>
+<p>This file contain a SASS function to declare the way we will be doing the z-index styles for major components. The way it works, is creating an array of elements with usual names and giving the position of that element inside the array, that&apos;s the correspondant z-index. A basic implementation of this will look like:</p>
+<pre><code class="lang-scss"><span class="hljs-variable">$z-layers</span>: (
+  <span class="hljs-string">&apos;initial&apos;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&apos;menu&apos;</span>: <span class="hljs-number">500</span>,
+  <span class="hljs-string">&apos;overlay&apos;</span>: <span class="hljs-number">1000</span>,
+);
+
+@function z(<span class="hljs-variable">$layer</span>) {
+  @<span class="hljs-keyword">if</span> not map-has-key(<span class="hljs-variable">$z-layers</span>, <span class="hljs-variable">$layer</span>) {
+    @<span class="hljs-keyword">warn</span> <span class="hljs-string">&apos;No layer found for `#{$layer}` in $z-layers map. Property omitted.&apos;</span>;
+  }
+  @return map-get(<span class="hljs-variable">$z-layers</span>, <span class="hljs-variable">$layer</span>);
+}
+</code></pre>
+<h2 id="variables">Variables</h2>
+<p>Variables should be declared on a file basis, only leave globals for colors and settings that are really global.</p>
+<h3 id="variable-naming">Variable Naming</h3>
+<p>Variable naming convention goes like this:</p>
+<p><code>${type}--{element}-{attribute}:</code></p>
+<h3 id="types">Types</h3>
+<p><code>types</code> can be one of the following:</p>
+<ol>
+<li>size</li>
+<li>color</li>
+<li>font</li>
+<li>animation</li>
+<li>transition</li>
+</ol>
+<p>Feel free do add a new type, as long is necessary</p>
+<h3 id="element">Element</h3>
+<p>This is the part of the component the variable applies, for example <code>header</code>, <code>hero</code>, <code>navigation</code> etc</p>
+<h3 id="attribute">Attribute</h3>
+<p>This is the attribute the variable applies, for example <code>background</code>, <code>height</code>, <code>width</code> etc</p>
+<h3 id="variable-definition">Variable Definition</h3>
+<p>Variables should be the first section of a file. Like the following example</p>
+<pre><code class="lang-scss"><span class="hljs-variable">$color--foo-background</span>:       <span class="hljs-variable">$blueshell</span>;
+<span class="hljs-variable">$color--foo-font</span>:             <span class="hljs-variable">$blueshell</span>;
+$&lt;variable&gt;:                  &lt;value&gt;;
+
+<span class="hljs-selector-class">.foo</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color--foo-background</span>;
+}
+</code></pre>
+<blockquote>
+<p>Keep in mind how the variables declaration is aligned, we encourage to keep that format (it doesn&apos;t need to be an specific space but all the values should be aligned).</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Styleguides">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../workflow/" class="navigation navigation-next " aria-label="Next page: Workflow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SASS","level":"1.3.1","depth":2,"next":{"title":"Workflow","level":"1.4","depth":1,"path":"workflow/README.md","ref":"workflow/README.md","articles":[{"title":"Git","level":"1.4.1","depth":2,"path":"workflow/Git.md","ref":"workflow/Git.md","articles":[]},{"title":"Pull Requests","level":"1.4.2","depth":2,"path":"workflow/PullRequests.md","ref":"workflow/PullRequests.md","articles":[]}]},"previous":{"title":"Styleguides","level":"1.3","depth":1,"path":"styleguides/README.md","ref":"styleguides/README.md","articles":[{"title":"SASS","level":"1.3.1","depth":2,"path":"styleguides/SASS.md","ref":"styleguides/SASS.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"styleguides/SASS.md","mtime":"2016-06-08T16:06:28.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2017-01-26T21:29:29.909Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,471 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>X-Workflow · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HowToWriteASpec.html" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <a href="README.md">
+            
+                    
+                    Methodology
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="X-Workflow.html">
+            
+                <a href="X-Workflow.html">
+            
+                    
+                    X-Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="HowToWriteASpec.html">
+            
+                <a href="HowToWriteASpec.html">
+            
+                    
+                    How to write a spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../styleguides/">
+            
+                <a href="../styleguides/">
+            
+                    
+                    Styleguides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../styleguides/SASS.html">
+            
+                <a href="../styleguides/SASS.html">
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../workflow/">
+            
+                <a href="../workflow/">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../workflow/Git.html">
+            
+                <a href="../workflow/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../workflow/PullRequests.html">
+            
+                <a href="../workflow/PullRequests.html">
+            
+                    
+                    Pull Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >X-Workflow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><img src="X_Workflow-000.png" alt=""></p>
+<p><strong>Author:</strong> Fernando Trasvi&#xF1;a</p>
+<p><strong>Revision</strong>: Draft</p>
+<h1 id="introduction">Introduction</h1>
+<p>Freshout has implemented and experimented with several methodologies in the past to improve its development process. It has been a long quest in the search of techniques, advancements, ideas and more, to better the way we work.
+Even though the process has shown improvements here and there, there is no general consensus on what works and why. There is no manual or dedicated discussion time to improve and adopt these methodologies. Neither is there a feedback process to further advance and spread the knowledge from these practices to the rest of the company.
+This document is the next step into these efforts.</p>
+<h1 id="objective">Objective</h1>
+<p>This document is meant to be a manual for an ongoing living and ever changing process for the entire company, where everyone can participate and collaborate with others to expose examples, special cases, prepare courses and discuss.
+&#xFFFC;</p>
+<h1 id="general-process">General Process</h1>
+<p><img src="X_Workflow-001.png" alt="">
+This General Process is the cycle in which we live while we work. Whether we are aware of it or not, we generally follow some form of this but in an unorganized way, which leads to errors and problems.</p>
+<p>Following a constituted method reduces the number of errors. Even though the process may not be perfect, it represents a giant leap to success.</p>
+<h1 id="how-to-go-through-the-process">How To Go Through The Process?</h1>
+<p>The main idea here is to look at the company as a single team. This means that even though you may not be included throughout the whole process, this is a single unit where some people take care of certain aspects, and you participate on your area of expertise in the overall process.</p>
+<p>Moreover, there will be times where you will be in charge of a stage. In that case, knowing the entire process is helpful because you can participate on any stage and understand the value that others provide, as well as the value you provide.</p>
+<p><img src="X_Workflow-002.png" alt=""></p>
+<p>When you start working on a problem, the first thing to do is identify what its current stage is, and follow its process until the end. This may take several iterations, loops and tweaks, but you must follow through with the general process. It&#x2019;s possible that you may need to hand your work over to another peer at some point so s/he can continue, or that someone may use your work as research in the future, so be sure to see it through.</p>
+<p>A good analogy for this is trying to find your way out of an unknown forest. You may end up going in circles, making bad decisions, and may even be forced to go back, but if you execute a plan properly, you will get out of there with no harm. We tend to think that forcing our way out may work (and in some cases, it might), but that doesn&#x2019;t mean that this is the right way to do it.
+&#xFFFC;
+<img src="X_Workflow-003.png" alt=""></p>
+<p>&#xFFFC;&#xFFFC;During the process you will need tools, and knowledge specific to each stage. It doesn&#x2019;t matter if you don&apos;t have domain expertise because you will get better with practice and time. Just make sure that you don&#x2019;t skip something because you don&apos;t fully get it, seems hard or useless. Instead, ask questions, read and research extra references. It&#x2019;s better to do something partially right than not do anything at all.</p>
+<h1 id="problem-discovery">Problem Discovery</h1>
+<p>This first stage is where you get to observe something: the description of a new project, a customer describing a use case, a bug on the system, an undiscovered flow, a performance hit, or anything that draws your attention. This process is about discovering the components of the problem, their manifestations, and understanding their causes and effects.</p>
+<p><img src="X_Workflow-004.png" alt=""></p>
+<h1 id="observation">Observation</h1>
+<p>Many problems occur in areas we don&apos;t fully understand. But even when you think you do know what they&#x2019;re about, you should never take what you know for granted.</p>
+<p>&#xFFFC;To be sure of what you&#x2019;re dealing with, observe the system and try to understand it. List logs, reports, and data from other peers that could give you a clue on the system structure or flow.</p>
+<p><img src="X_Workflow-005.png" alt="">
+<img src="X_Workflow-006.png" alt=""></p>
+<h1 id="data-gathering">Data Gathering</h1>
+<p>Gather all the data and look at it historically: when did the manifestation of the problem occur?, what was going on?, what variables on the system got modified?, is it just one or more?, etc. Try to think about logical and simple explanations, and look at the data you have to see if it matches.</p>
+<p><img src="X_Workflow-007.png" alt=""></p>
+<h1 id="data-analysis">Data Analysis</h1>
+<p>Once you get some ideas on the problem / system, use the data you have to prove the ideas wrong or right. Make sure to go through the data even if it&#x2019;s a problem you think you&#x2019;re 100% confident about. You may end up surprised and even inspired towards new discoveries.</p>
+<p>&#xFFFC;On this stage, you should use visualizations, models, tools for analysis of text, logs, and all the resources you have at your disposal (even asking somebody or doing a fast internet search may help). Anything is valid as long as you understand the data and can test your ideas.</p>
+<p><img src="X_Workflow-008.png" alt=""></p>
+<h1 id="hypothesis-generation">Hypothesis Generation</h1>
+<p>Now you should be able to generate some ideas of your own. These ideas should be written down in a sentence that explains what is going on. The hypothesis may be wrong or right but this is not important at this point.</p>
+<p>Taguchi diagrams are a very useful tool for this: they will give you an overview of your ideas and how those causes may be at play inside the system. The objective is to externalize and organize the ideas to prioritize them and find the right ones.</p>
+<p><img src="X_Workflow-009.png" alt="">
+<img src="X_Workflow-010.png" alt="">
+&#xFFFC;</p>
+<h1 id="experimental-design">Experimental Design</h1>
+<p>Experimental Design is a set of tools that aid in the process of knowledge generation and hypothesis testing. This is not TDD, but you may find some similar ideas.</p>
+<p>Experimental Design is a methodology that helps you be efficient and allows you to have a high degree of reliability on the results you get. This procedure helps you test several ideas at the same time, and detect if you did something wrong along the way. It is a hard-to-master skill, but practice helps.</p>
+<p>With it, you have to prove that the causes are important for the problem you&#x2019;re working on. This is the foundation for the next stage, so don&#x2019;t skip it!</p>
+<p><img src="X_Workflow-011.png" alt=""></p>
+<h1 id="&#xFFFC;&#xFFFC;tests">&#xFFFC;&#xFFFC;Tests</h1>
+<p>These are a set of protocols that anyone can use to replicate your observations. They also work as your final tests to determine the success or failure of your hypothesis at the end of the process. Be sure to establish them in a clear manner because you will need them to continue.</p>
+<p><img src="X_Workflow-012.png" alt=""></p>
+<h1 id="problem-definition">Problem Definition</h1>
+<p>While you were working on the previous stages, you may have discovered that there is more than one problem going on. This is a common occurrence that shouldn&#x2019;t be overlooked. If you try to force the problem to be only one and express it as such, you are taxing yourself with too much complexity. Define your problem in a single, simple sentence, but remember that there&#x2019;s nothing wrong with having many definitions.
+&#xFFFC;</p>
+<h2 id="definition">Definition</h2>
+<p>The definition should be a single sentence that expresses the problem. Keep in mind that other people should be able to understand it, and if they want to know more about it, they should be able to look at your previous work to comprehend where it came from.</p>
+<p><img src="X_Workflow-013.png" alt=""></p>
+<h2 id="example">Example:</h2>
+<p>Getting to 500 requests per second on this service increases the average response time from 10ms to 500ms. (good)
+The service response time is affected by the number of requests per second (bad).</p>
+<h1 id="constraints">Constraints</h1>
+<p>You should also define the constraints of the problem. There is no single system that behaves the same way, no matter the surrounding conditions, so make sure to list all the conditions and their importance. What may be a problem in a small computer may not be in a server.</p>
+<h1 id="search-for-solutions">Search For Solutions</h1>
+<p>&#xFFFC;This stage is where the actual ideas are born. You may have started to develop some ideas in the previous stages, but this is where you need to document them. Gather with people, read, talk, draw, and generate some ideas on how you could solve the problem. Once you have that, it&#x2019;s time to test those ideas to see if those are possible within the constraints.</p>
+<h1 id="research">Research</h1>
+<p>Many problems have been solved already, and there is a chance your problem is one of them (though it might not be expressed the same way or in the same area). This is why it&#x2019;s always a good idea to research and look around. If it hasn&#x2019;t been solved, you may end up learning a few things that may have already worked or failed.</p>
+<p><img src="X_Workflow-014.png" alt=""></p>
+<h1 id="brainstorming">Brainstorming</h1>
+<p>Now that you have a lot of information on the problem that you decided to solve, it&#x2019;s time to gather some friends and talk about some solutions. Think about many possibilities, go crazy and be wrong! And don&#x2019;t worry: there will be a chance to discard ideas that won&#x2019;t work later on.</p>
+<p><img src="X_Workflow-015.png" alt="">
+&#xFFFC;</p>
+<h1 id="modeling">Modeling</h1>
+<p>This step is about discarding weird ideas that may not work and choosing the best one that fits into the constraints. The diagrams, your old tests, and your documentation on the system will be key here to keep you focused.</p>
+<p>Remember to discard everything that doesn&#x2019;t work with the problem definition. Not only does this help improve the quality of your final solution, but it also reduces complexity.</p>
+<p><img src="X_Workflow-016.png" alt=""></p>
+<h1 id="&#xFFFC;&#xFFFC;prototyping">&#xFFFC;&#xFFFC;Prototyping</h1>
+<p>You may believe that a prototype is a bad implementation of the solution but you shouldn&#x2019;t think of it that way. On the contrary, a prototype is a simplified system that proves if the component can be built, and if it will work for the final solution.</p>
+<p><img src="X_Workflow-017.png" alt=""></p>
+<h1 id="&#xFFFC;&#xFFFC;specification">&#xFFFC;&#xFFFC;Specification</h1>
+<p>The Specification is generally viewed by developers as the document that provides a solution to a problem, but this isn&#x2019;t the case. The Specification is the guide with which you build the solution. It&#x2019;s basically the result of all the previous work.</p>
+<p>If you&#x2019;re stuck in a part of the Specification, there is a high probability that you skipped or missed something in a previous stage, so go back and figure it out.</p>
+<p><img src="X_Workflow-018.png" alt=""></p>
+<h1 id="&#xFFFC;&#xFFFC;problem">&#xFFFC;&#xFFFC;Problem</h1>
+<p>This is where you establish the problem this &#x201C;recipe&#x201D; solves. Keep in mind that this is a SPECIFIC SOLUTION, meaning that it does not solve many problems, does not solve all the problems, does not build products, and it does not solve the problem and all its possibilities. Choose ONE problem and work on it.</p>
+<h1 id="background">Background</h1>
+<p>This is the summary of the previous work done on this problem: research, failed attempts or improvements done by you or someone else. Be as clear as possible in this stage because this is how you will justify your course of action.</p>
+<h1 id="hypothesis">Hypothesis</h1>
+<p>The Hypothesis is the foundation for your solution. It is a single sentence in which the solution is based. In some cases, it can be more than one sentence but keep it simple: it&#x2019;s better to create more specs instead of trying to fit all into one.</p>
+<h1 id="solution-proposal">Solution Proposal</h1>
+<p>&#xFFFC;This is the general idea of the solution you came up with. It&#x2019;s meant to be a small description of how the solution works. Using a &#x201C;Black Box&#x201D; diagram helps get the general picture of your solution and how it interacts with other components.</p>
+<h1 id="functional-specification">Functional Specification</h1>
+<p>This is a detailed version of the solution proposal. Here you should be using diagrams, storyboards and text in an organized way that describes the different states, buttons or APIS on your solution. All the components and moving pieces of your solution should be specified. Think of this section as the anatomy of the solution.</p>
+<h1 id="technical-specification">Technical Specification</h1>
+<p>This is the real deal. The Technical Specification is where you describe the steps to implement the solution with color codes, dimension sequences, algorithms, and protocols. Anyone following this part of the document should be able to implement the solution you created (assuming the right skills).</p>
+<p>If you want to check how a specification is done, read about patents, RFC, IEEE, ECMA. These guys do specs for a living, so learn from them.</p>
+<h1 id="implementation">Implementation</h1>
+<p>This is the stage where you stop being creative and become an execution machine. You have everything you need so now, it&#x2019;s all about proper execution and error checking. Any change or strange situation should be written on your journal for later revision. All the tickets are consumed on this stage, and work gets distributed. This where things actually happen.</p>
+<p><img src="X_Workflow-019.png" alt="">
+&#xFFFC;</p>
+<h1 id="&#xFFFC;data-analysis">&#xFFFC;Data Analysis</h1>
+<p>Now that you completed the implementation, check if you did it right. Testing your hypothesis is the first step you have to take. You already did this on the early stages of the specification and you also have the tests from the discovery stage. Those were the problems you were trying to solve, so check if you did.</p>
+<p>Your constraints should have some kind of test too. Does it work on that old browser? Does it freeze on that slow network? Does the UX explains itself to a test user? Gather all that data because you will need it to build a report on what you achieved.</p>
+<h1 id="planning-for-the-future">Planning For The Future</h1>
+<p>Once you&#x2019;ve finished all the work, it&#x2019;s time to think it over. Document what you did, what you accomplished, what you failed to do, what new ideas you can think of, what other approaches could be tried, and even write up some improvements or new ventures that could be interesting.</p>
+<p>This information will be valuable for you in the future, and it will change the way you move forward.</p>
+<p><img src="X_Workflow-020.png" alt="">
+&#xFFFC;</p>
+<h1 id="&#xFFFC;appendix-references">&#xFFFC;Appendix References</h1>
+<ol>
+<li><a href="http://en.wikipedia.org/wiki/Research" _target="blank">Research</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Problem_solving" _target="blank">Problem solving</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Design_thinking" _target="blank">Design thinking</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scientific_method" _target="blank">Scientific method</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Design_of_experiments" _target="blank">Design of Experiments</a></li>
+<li>Elio, Renee, and Peternela B Scharf. &quot;Modeling novice-to-expert shifts in problem-solving strategy and knowledge organization.&quot; Cognitive Science 14.4 (1990): 579-639. <a href="http://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1404_4/abstract" _target="blank">Modeling Novice-to-Expert Shifts in Problem-Solving Strategy and ...</a></li>
+<li>Maarten Schraagen, Jan. &quot;How experts solve a novel problem in experimental design.&quot; Cognitive Science 17.2 (1993): 285-309. <a href="http://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1702_4/abstract" _target="blank">How Experts Solve a Novel Problem in Experimental Design</a>
+<a href="http://www.plantingscience.org/index.php?module=content&amp;func=view&amp;pid=74" _target="blank">Keeping a Research Journal</a>
+&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;&#xFFFC;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: Methodology">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HowToWriteASpec.html" class="navigation navigation-next " aria-label="Next page: How to write a spec">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"X-Workflow","level":"1.2.1","depth":2,"next":{"title":"How to write a spec","level":"1.2.2","depth":2,"path":"methodology/HowToWriteASpec.md","ref":"methodology/HowToWriteASpec.md","articles":[]},"previous":{"title":"Methodology","level":"1.2","depth":1,"path":"methodology/README.md","ref":"methodology/README.md","articles":[{"title":"X-Workflow","level":"1.2.1","depth":2,"path":"methodology/X-Workflow.md","ref":"methodology/X-Workflow.md","articles":[]},{"title":"How to write a spec","level":"1.2.2","depth":2,"path":"methodology/HowToWriteASpec.md","ref":"methodology/HowToWriteASpec.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"methodology/X-Workflow.md","mtime":"2017-01-26T21:27:09.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2017-01-26T21:29:29.909Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

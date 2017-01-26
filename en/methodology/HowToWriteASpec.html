@@ -1,0 +1,451 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>How to write a spec · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../styleguides/" />
+    
+    
+    <link rel="prev" href="X-Workflow.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <a href="README.md">
+            
+                    
+                    Methodology
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="X-Workflow.html">
+            
+                <a href="X-Workflow.html">
+            
+                    
+                    X-Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="HowToWriteASpec.html">
+            
+                <a href="HowToWriteASpec.html">
+            
+                    
+                    How to write a spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../styleguides/">
+            
+                <a href="../styleguides/">
+            
+                    
+                    Styleguides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../styleguides/SASS.html">
+            
+                <a href="../styleguides/SASS.html">
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../workflow/">
+            
+                <a href="../workflow/">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../workflow/Git.html">
+            
+                <a href="../workflow/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../workflow/PullRequests.html">
+            
+                <a href="../workflow/PullRequests.html">
+            
+                    
+                    Pull Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >How to write a spec</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>So <strong>why</strong> should we write specs? you may be asking.</p>
+<blockquote>
+<p>Why won&apos;t people write specs? People claim that it&apos;s because they&apos;re saving time by skipping the spec-writing phase. They act as if spec-writing was a luxury reserved for NASA space shuttle engineers, or people who work for giant, established insurance companies. Balderdash. First of all, failing to write a spec is the single biggest unnecessary risk you take in a software project. It&apos;s as stupid as setting off to cross the Mojave desert with just the clothes on your back, hoping to &quot;wing it.&quot; Programmers and software engineers who dive into code without writing a spec tend to think they&apos;re cool gunslingers, shooting from the hip. They&apos;re not. They are terribly unproductive. They write bad code and produce shoddy software, and they threaten their projects by taking giant risks which are completely uncalled for.</p>
+</blockquote>
+<p><em>&#x2013; Joel Spolsky on <a href="http://www.joelonsoftware.com/articles/fog0000000036.html" _target="blank">Painless Functional Specifications</a></em></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li>Sections<ul>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#problem-overview">Problem Overview</a></li>
+<li><a href="#constraints">Constraints</a></li>
+<li><a href="#background">Background</a></li>
+<li><a href="#theory-of-operation">Theory of Operation</a><ul>
+<li><a href="#black-box">Black box</a></li>
+<li><a href="#hypothesis">Hypothesis</a><ul>
+<li><a href="#functional-specification">Functional Specification</a></li>
+<li><a href="#technical-specification">Technical Specification</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#open-issues">Open Issues</a></li>
+</ul>
+</li>
+<li><p>Considerations</p>
+<ul>
+<li><a href="#divide-and-conquer">Divide and Conquer</a></li>
+<li><a href="#diagrams">Diagrams</a></li>
+<li><a href="#specs-should-be-validated">Specs should be validated</a></li>
+<li><a href="#specs-should-be-maintained">Specs should be maintained</a></li>
+<li><a href="#side-notes">Side Notes</a></li>
+</ul>
+<h2 id="sections">Sections</h2>
+</li>
+</ul>
+<p>All specs should include the following sections. </p>
+<p>We&apos;re heavily based on Joel Spolsky&apos;s <a href="http://www.joelonsoftware.com/articles/fog0000000035.html" _target="blank">Painless Functional Specifications - Part 2: What&apos;s a Spec?</a></p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>The current status of the spec, i.e &quot;This spec is not complete, is missing x&quot; or &quot;This spec is considered complete&quot;.</p>
+<h2 id="author">Author</h2>
+<p>Someone must take responsability and ownership of the document. Only one person here.</p>
+<h2 id="problem-overview">Problem Overview</h2>
+<p>This is a description that people will usually see before anything else. This is the big picture. Include diagrams if needed.</p>
+<h2 id="constraints">Constraints</h2>
+<p>You should also define the constraints of the problem. There is no single system that behaves the same way, no matter the surrounding conditions, so make sure to list all the conditions and their importance. What may be a problem in a small computer may not be in a server.</p>
+<h2 id="background">Background</h2>
+<p>This is the summary of the previous work done on this problem: research, failed attempts or improvements done by you or someone else. Be as clear as possible in this stage because this is how you will justify your course of action.</p>
+<h2 id="theory-of-operation">Theory of operation</h2>
+<p>This section is all about the details. People will usually skim the document until they need to know a particular detail. Describe with detail how everything in your system will work, down to actual pseudo-code, objects, interfaces, messages, etc.</p>
+<h3 id="black-box">Black box</h3>
+<p>In this section, you will present a black box diagram. A black box diagram, is an object which can be viewed in terms of its input, ouput and messages without any knowledge of its internal workings. <a href="http://en.wikipedia.org/wiki/Black_box" _target="blank">Wikipedia</a>.</p>
+<h3 id="hypothesis">Hypothesis</h3>
+<p>The Hypothesis is the foundation for your solution. It is a single sentence in which the solution is based. In some cases, it can be more than one sentence but keep it simple: it&#x2019;s better to create more specs instead of trying to fit all into one.</p>
+<p>For example.</p>
+<ul>
+<li>This design will handle at least 10k request per second.</li>
+<li>There&apos;s an API that I can use to get X data.</li>
+</ul>
+<p>Later you have to prove those with a small prototype, a benchmark or relevant data.</p>
+<h3 id="functional-specification">Functional Specification</h3>
+<p>This is a detailed version of the solution proposal. Here you should be using diagrams, storyboards and text in an organized way that describes the different states, buttons or APIS on your solution. All the components and moving pieces of your solution should be specified. Think of this section as the anatomy of the solution.</p>
+<h3 id="technical-specification">Technical Specification</h3>
+<p>In the technical spec, you describe the implementation using pseudo-code (Check <a href="#why-should-i-use-pseudo-code">Why should I use pseudo-code</a>).</p>
+<p>The idea is to define both the API and the Implementation of your classes/objects, this way thinking in advance all the problems you may have when implementing this in actual code.</p>
+<p>For example, let&apos;s write a quick implementation of a PubSub class.</p>
+<pre><code>Class PubSub -&gt;
+  publish: -&gt; (String eventName, Object data)
+      let data be data or {}
+
+    if self.events includes eventName
+        for each callback in self.events[eventName]
+            call callback(data)
+
+  subscribe: -&gt; (String eventName, F() callback)
+      let self.events be self.events or {}
+
+      if self.events not includes eventName
+          set self.events[eventName] to []
+
+      push callback into self.event[eventName]
+</code></pre><p>We describe the arguments the function is expecting, the actual implementation using pseudo-code, the idea is that the implemetation is language agnostic, so you can recode this in any language that you want (in this case, at least one language that has lambdas).</p>
+<h4 id="why-should-i-use-pseudo-code">Why should I use pseudo-code</h4>
+<p>When doing your first implementation, you will be tempted to just copy paste the code you wrote in your spec as production code. Writing code using pseudo-code doesn&apos;t let you do this, and while you are writing this to actual code, it will give a second time to review what you just plan to do, and also you maybe you will find bugs or errors when writing from pseudo-code to actual code.</p>
+<h2 id="open-issues">Open Issues</h2>
+<p>What is this spec missing? What it doesn&apos;t solve? This section is good to generate discussion on how to solve them. By the time the programmers start work, all of these need to be stomped out and this section will be empty.</p>
+<h2 id="considerations">Considerations</h2>
+<h2 id="divide-and-conquer">Divide and conquer</h2>
+<p>A single project may and will contain several specs. If you&apos;re feeling like writing an IBM manual from the 80&apos;s, that&apos;s pretty much the signal that the system, and thus the spec, needs to be broken down in sub-systems.</p>
+<h2 id="diagrams">Diagrams</h2>
+<p>Diagrams are your friends but you should only include ASCII diagrams as they&apos;re the most text friendly out there. You can use services like <a href="http://asciiflow.com" _target="blank">asciiflow</a> for easy edition.</p>
+<h2 id="specs-should-be-validated">Specs should be validated</h2>
+<p>Before implementing them they should be approved by at least one peer.</p>
+<h2 id="specs-should-be-maintained">Specs should be maintained</h2>
+<p>If the code is not considered not &quot;code complete&quot; and there&apos;s design changes, the spec should always reflect that. If the spec goes out of date then the maintainer is to be blamed. Quoting Joel:</p>
+<blockquote>
+<p>The updating continues as the product is developed and new decisions are made. The spec always reflects our best collective understanding of how the product is going to work. The spec is only frozen when the product is code complete (that is, when all functionality is complete, but there&apos;s still testing and debugging work.)</p>
+</blockquote>
+<h2 id="side-notes">Side Notes</h2>
+<p>While you&apos;re writing a spec, remember your various audiences: programmers, testers, marketing, tech writers, etc. Leave side notes all over the spec whenever is needed. Labeling them as &quot;Technical note&quot;, &quot;Marketing note&quot;, &quot;Testing note&quot; etc will make sure people can easily browse your document for the notes they&apos;re interested.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="X-Workflow.html" class="navigation navigation-prev " aria-label="Previous page: X-Workflow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../styleguides/" class="navigation navigation-next " aria-label="Next page: Styleguides">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"How to write a spec","level":"1.2.2","depth":2,"next":{"title":"Styleguides","level":"1.3","depth":1,"path":"styleguides/README.md","ref":"styleguides/README.md","articles":[{"title":"SASS","level":"1.3.1","depth":2,"path":"styleguides/SASS.md","ref":"styleguides/SASS.md","articles":[]}]},"previous":{"title":"X-Workflow","level":"1.2.1","depth":2,"path":"methodology/X-Workflow.md","ref":"methodology/X-Workflow.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"methodology/HowToWriteASpec.md","mtime":"2017-01-26T21:25:37.000Z","type":"markdown"},"gitbook":{"version":"3.0.3","time":"2017-01-26T21:29:29.909Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
